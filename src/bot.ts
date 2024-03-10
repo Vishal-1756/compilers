@@ -19,7 +19,7 @@ const bt = async (bot: any) => {
     let min = (Math.floor(tsec / 60)) % 60
     let hr = Math.floor(tsec / 3600)
     ctx.reply(`=========================
-𝗥𝗲𝗮𝗹𝘁𝗶𝗺𝗲 𝗶/𝗼 𝗰𝗼𝗺𝗽𝗶𝗹𝗲𝗿 𝗯𝗼𝘁
+Realtime Compiler Bot 
 =========================
 
 ${dt.version}
@@ -29,20 +29,20 @@ Uptime: ${hr} : ${min} : ${sec}
 
   bot.hears(new RegExp("^\\" + config.startSymbol + "(version)", 'i'), (ctx: any) => {
     ctx.reply(`=========================
-𝗥𝗲𝗮𝗹𝘁𝗶𝗺𝗲 𝗶/𝗼 𝗰𝗼𝗺𝗽𝗶𝗹𝗲𝗿 𝗯𝗼𝘁
+Realtime Compiler Bot 
 =========================
 
 ${dt.version}
-${config.owner ? "Owner: " + config.owner : "𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: @PanditSiddharth"}
+${config.owner ? "Owner: " + config.owner : "Devloper: Open Source"}
 
-𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:
-  # 𝐍𝐨𝐝𝐞 𝐣𝐬 𝐜𝐨𝐦𝐩𝐢𝐥𝐞𝐫
-  # 𝐏𝐲𝐭𝐡𝐨𝐧 𝐜𝐨𝐦𝐩𝐢𝐥𝐞𝐫
-  # 𝐂 𝐜𝐨𝐦𝐩𝐢𝐥𝐞𝐫
-  # 𝐂++ 𝐂𝐨𝐦𝐩𝐢𝐥𝐞𝐫
-  # 𝐉𝐚𝐯𝐚 𝐜𝐨𝐦𝐩𝐢𝐥𝐞𝐫
-  # G𝗼 𝐜𝐨𝐦𝐩𝐢𝐥𝐞𝐫
-  # T𝐬 𝐜𝐨𝐦𝐩𝐢𝐥𝐞𝐫
+Features:
+  # Node js Compiler
+  # Python Compiler 
+  # C Compiler 
+  # CPP Compiler 
+  # Java Compiler 
+  # Go Compiler 
+  # Ts Compiler 
 =========================
 `).catch(() => { })
   })
@@ -81,7 +81,7 @@ ${config.owner ? "Owner: " + config.owner : "𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞�
   bot.hears(new RegExp("^(\\" + config.startSymbol + "|\\/|@)(help|start)", 'i'), async (ctx: any, next: any) => {
     if (ctx.message.text.includes("run"))
       return next()
-    ctx.reply(`𝗥𝗲𝗮𝗹𝘁𝗶𝗺𝗲 𝗶/𝗼 𝗰𝗼𝗺𝗽𝗶𝗹𝗲𝗿 𝗯𝗼𝘁
+    ctx.reply(`Realtime Compiler Bot
 
 ${dt.hcmp}
 `, dt.jcmp);
@@ -94,7 +94,7 @@ ${dt.hcmp}
       .catch((err: any) => { })
   }
 
-  let minf = `bot owner ${config.owner ? config.owner : "@PanditSiddharth"}
+  let minf = `bot owner ${config.owner ? config.owner : "Open Source"}
 ${config.channel + " " + config.group}`
 
 }
