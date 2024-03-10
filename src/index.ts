@@ -39,8 +39,8 @@ function cmdd(ctx: any) {
 export function compiler(token: tp.TelegramBotToken, conf: tp.Config = {} as tp.Config) {
 
   // Some default configurations
-  conf.version = "3.1.0"
-  conf.versionNo = 26
+  conf.version = "4.1.0"
+  conf.versionNo = 30
   if(!conf.ttl)
   conf.ttl = 60;
 
@@ -50,9 +50,9 @@ export function compiler(token: tp.TelegramBotToken, conf: tp.Config = {} as tp.
     if (!conf.group) {
       conf.exes = exes;
     }
-  conf.group = "@Logicb_support";
+  conf.group = "@Not_Coding_Support";
   if (!conf.channel)
-    conf.channel = "@LogicBots";
+    conf.channel = "@Not_Coding";
   (config as any).configure(conf)
   // config.config = conf;
 
@@ -174,7 +174,7 @@ export function compiler(token: tp.TelegramBotToken, conf: tp.Config = {} as tp.
       if (conf.allowed) {
         let allowedStr = conf.allowed.join(" ");
         if (!allowedStr.match(ctx.from.id))
-          return ctx.reply("You are not allowed ask @LogicB_support")
+          return ctx.reply("You are not allowed ask @Not_Coding_Support")
       }
 
       let compiler: any = ctx.message.text + "";
