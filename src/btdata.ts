@@ -1,5 +1,5 @@
 import config from "./config"
-export let version = `𝐕𝐞𝐫𝐬𝐢𝐨𝐧: ${config.version}\n𝐕𝐞𝐫𝐬𝐢𝐨𝐧 𝐧𝐨.: ${config.versionNo}`
+export let version = `Version: ${config.version}\nVersion No.: ${config.versionNo}`
 
 export let hcmp = `=========================
 Compilation commands
@@ -59,7 +59,7 @@ ${config.startSymbol}start for basic info
 @help for this help list
 
 ${config.channel + " " + config.group}
-${config.owner ? "Owner: " + config.owner : "𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: @PanditSiddharth"}
+${config.owner ? "Owner: " + config.owner : "Devloper: Open Source"}
 `
 
 function ob(text: any, action: any) {
